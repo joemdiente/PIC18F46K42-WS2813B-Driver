@@ -14,12 +14,6 @@
 #include "my_spi.h"
 #include "mcc_generated_files/spi1.h"
 
-/* Findings */
-/* SPI CLK doesn't set to TMR2_PostScaler
- * CLC can output TMR2_OUT not sure if this is TMR2 Postscaler
- * 
- */
-
 void myLEDArray(uint8_t r, uint8_t g, uint8_t b) 
 {
     SPI1TXB = g;
