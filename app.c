@@ -14,14 +14,11 @@
 #include "my_spi.h"
 #include "mcc_generated_files/spi1.h"
 
-<<<<<<< Updated upstream
-=======
 /* App.h */
 #define MAX_NUMBER_OF_LEDS 20
 #define LED_COUNT (MAX_NUMBER_OF_LEDS + 1) //Dummy LED
 #define LED_STRIP
 
->>>>>>> Stashed changes
 void myLEDArray(uint8_t r, uint8_t g, uint8_t b) 
 {
     SPI1TXB = g;
