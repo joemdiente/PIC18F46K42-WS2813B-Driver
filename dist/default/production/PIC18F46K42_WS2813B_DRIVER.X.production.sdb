@@ -95,15 +95,15 @@ TMR2_UART2_TX_EDGE 24
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"23 D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c
+"22 D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c
 [v _myLEDArray myLEDArray `(v  1 e 1 0 ]
-"33
+"32
 [v _myLEDReset myLEDReset `(v  1 e 1 0 ]
-"39
+"38
 [v _myLEDClear myLEDClear `(v  1 e 1 0 ]
-"49
+"51
 [v _myLEDSnake myLEDSnake `(v  1 e 1 0 ]
-"72
+"75
 [v _my_app my_app `(v  1 e 1 0 ]
 "50 D:\Desktop\WS2813B - PIC18F45K50\PIC18F46K42_WS2813B_DRIVER.X\main.c
 [v _main main `(v  1 e 1 0 ]
@@ -731,13 +731,13 @@ TMR2_UART2_TX_EDGE 24
 {
 "77
 } 0
-"72 D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c
+"75 D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c
 [v _my_app my_app `(v  1 e 1 0 ]
 {
-"75
+"78
 [v my_app@i i `i  1 a 2 33 ]
 [v my_app@j j `i  1 a 2 31 ]
-"116
+"100
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
 [v _printf printf `(i  1 e 2 0 ]
@@ -794,40 +794,40 @@ TMR2_UART2_TX_EDGE 24
 [v UART1_Write@txData txData `uc  1 a 1 0 ]
 "177
 } 0
-"49 D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c
+"51 D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c
 [v _myLEDSnake myLEDSnake `(v  1 e 1 0 ]
 {
-"51
+"53
 [v myLEDSnake@i i `i  1 a 2 9 ]
 [v myLEDSnake@j j `i  1 a 2 7 ]
-"49
+"51
 [v myLEDSnake@led_count led_count `us  1 p 2 3 ]
-"69
+"71
 } 0
-"39
+"38
 [v _myLEDClear myLEDClear `(v  1 e 1 0 ]
 {
-"42
+"41
 [v myLEDClear@i i `i  1 a 2 5 ]
-"39
+"38
 [v myLEDClear@led_count led_count `us  1 p 2 3 ]
-"47
+"46
 } 0
-"33
+"32
 [v _myLEDReset myLEDReset `(v  1 e 1 0 ]
 {
-"37
+"36
 } 0
-"23
+"22
 [v _myLEDArray myLEDArray `(v  1 e 1 0 ]
 {
 [v myLEDArray@r r `uc  1 a 1 wreg ]
 [v myLEDArray@r r `uc  1 a 1 wreg ]
 [v myLEDArray@g g `uc  1 p 1 0 ]
 [v myLEDArray@b b `uc  1 p 1 1 ]
-"25
+"24
 [v myLEDArray@r r `uc  1 a 1 2 ]
-"31
+"30
 } 0
 "50 D:\Desktop\WS2813B - PIC18F45K50\PIC18F46K42_WS2813B_DRIVER.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]

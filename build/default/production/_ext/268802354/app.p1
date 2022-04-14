@@ -2261,335 +2261,260 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _app_state
 -> -> -> 0 `i `l `ul
 ]
-"23 D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 23: void myLEDArray(uint8_t r, uint8_t g, uint8_t b)
+"22 D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 22: void myLEDArray(uint8_t r, uint8_t g, uint8_t b)
 [v _myLEDArray `(v ~T0 @X0 1 ef3`uc`uc`uc ]
-"24
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 24: {
+"23
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 23: {
 {
 [e :U _myLEDArray ]
-"23
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 23: void myLEDArray(uint8_t r, uint8_t g, uint8_t b)
+"22
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 22: void myLEDArray(uint8_t r, uint8_t g, uint8_t b)
 [v _r `uc ~T0 @X0 1 r1 ]
 [v _g `uc ~T0 @X0 1 r2 ]
 [v _b `uc ~T0 @X0 1 r3 ]
-"24
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 24: {
+"23
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 23: {
 [f ]
-"25
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 25:     SPI1TXB = g;
+"24
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 24:     SPI1TXB = g;
 [e = _SPI1TXB _g ]
-"26
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 26:     while (!SPI1STATUSbits.TXBE);
+"25
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 25:     while (!SPI1STATUSbits.TXBE);
 [e $U 2196  ]
 [e :U 2197 ]
 [e :U 2196 ]
 [e $ ! != -> . . _SPI1STATUSbits 0 5 `i -> 0 `i 2197  ]
 [e :U 2198 ]
-"27
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 27:     SPI1TXB = r;
+"26
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 26:     SPI1TXB = r;
 [e = _SPI1TXB _r ]
-"28
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 28:     while (!SPI1STATUSbits.TXBE);
+"27
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 27:     while (!SPI1STATUSbits.TXBE);
 [e $U 2199  ]
 [e :U 2200 ]
 [e :U 2199 ]
 [e $ ! != -> . . _SPI1STATUSbits 0 5 `i -> 0 `i 2200  ]
 [e :U 2201 ]
-"29
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 29:     SPI1TXB = b;
+"28
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 28:     SPI1TXB = b;
 [e = _SPI1TXB _b ]
-"30
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 30:     while (!SPI1STATUSbits.TXBE);
+"29
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 29:     while (!SPI1STATUSbits.TXBE);
 [e $U 2202  ]
 [e :U 2203 ]
 [e :U 2202 ]
 [e $ ! != -> . . _SPI1STATUSbits 0 5 `i -> 0 `i 2203  ]
 [e :U 2204 ]
-"31
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 31: }
+"30
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 30: }
 [e :UE 2195 ]
 }
-"33
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 33: void myLEDReset(void) {
+"32
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 32: void myLEDReset(void) {
 [v _myLEDReset `(v ~T0 @X0 1 ef ]
 {
 [e :U _myLEDReset ]
 [f ]
-"35
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 35:     _delay((unsigned long)((300)*(64000000/4000000.0)));
+"34
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 34:     _delay((unsigned long)((300)*(64000000/4000000.0)));
 [e ( __delay (1 -> * -> -> 300 `i `d / -> -> 64000000 `l `d .4000000.0 `ul ]
-"37
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 37: }
+"36
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 36: }
 [e :UE 2205 ]
 }
-"39
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 39: void myLEDClear(uint16_t led_count)
+"38
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 38: void myLEDClear(uint16_t led_count)
 [v _myLEDClear `(v ~T0 @X0 1 ef1`us ]
-"40
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 40: {
+"39
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 39: {
 {
 [e :U _myLEDClear ]
-"39
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 39: void myLEDClear(uint16_t led_count)
+"38
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 38: void myLEDClear(uint16_t led_count)
 [v _led_count `us ~T0 @X0 1 r1 ]
-"40
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 40: {
+"39
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 39: {
 [f ]
-"42
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 42:     for (int i = 0; i < led_count; i++) {
+"41
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 41:     for (int i = 0; i < led_count; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
 [e $U 2210  ]
 [e :U 2207 ]
 {
-"43
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 43:         myLEDArray(0,0,0);
+"42
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 42:         myLEDArray(0,0,0);
 [e ( _myLEDArray (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
-"44
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 44:     };
+"43
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 43:     };
 }
 [e ++ _i -> 1 `i ]
 [e :U 2210 ]
 [e $ < -> _i `ui -> _led_count `ui 2207  ]
 [e :U 2208 ]
 }
-"46
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 46:     myLEDReset();
+"45
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 45:     myLEDReset();
 [e ( _myLEDReset ..  ]
-"47
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 47: }
+"46
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 46: }
 [e :UE 2206 ]
 }
-"49
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 49: void myLEDSnake(uint16_t led_count)
+"51
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 51: void myLEDSnake(uint16_t led_count)
 [v _myLEDSnake `(v ~T0 @X0 1 ef1`us ]
-"50
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 50: {
+"52
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 52: {
 {
 [e :U _myLEDSnake ]
-"49
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 49: void myLEDSnake(uint16_t led_count)
-[v _led_count `us ~T0 @X0 1 r1 ]
-"50
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 50: {
-[f ]
 "51
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 51:     int i = 0, j = 0;
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 51: void myLEDSnake(uint16_t led_count)
+[v _led_count `us ~T0 @X0 1 r1 ]
+"52
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 52: {
+[f ]
+"53
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 53:     int i = 0, j = 0;
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
 [v _j `i ~T0 @X0 1 a ]
 [e = _j -> 0 `i ]
-"53
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 53:     for (i = 0; i < led_count; i++)
+"55
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 55:     for (i = 0; i <= led_count; i++)
 {
 [e = _i -> 0 `i ]
 [e $U 2215  ]
 [e :U 2212 ]
-"54
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 54:     {
+"56
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 56:     {
 {
-"55
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 55:         for(j = 0; j <= i; j++)
+"57
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 57:         for(j = 0; j <= i; j++)
 {
 [e = _j -> 0 `i ]
 [e $U 2219  ]
 [e :U 2216 ]
-"56
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 56:         {
-{
-"57
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 57:             if(j == i)
-[e $ ! == _j _i 2220  ]
 "58
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 58:             {
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 58:         {
 {
 "59
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 59:                 myLEDArray(0,0,255);
-[e ( _myLEDArray (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 255 `i `uc ]
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 59:             if(j == i)
+[e $ ! == _j _i 2220  ]
 "60
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 60:             }
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 60:             {
+{
+"61
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 61:                 myLEDArray(0,0,255);
+[e ( _myLEDArray (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 255 `i `uc ]
+"62
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 62:             }
 }
 [e $U 2221  ]
-"61
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 61:             else
-[e :U 2220 ]
-"62
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 62:             {
-{
 "63
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 63:                 myLEDArray(0,0,0);
-[e ( _myLEDArray (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 63:             else
+[e :U 2220 ]
 "64
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 64:             }
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 64:             {
+{
+"65
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 65:                 myLEDArray(0,0,0);
+[e ( _myLEDArray (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"66
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 66:             }
 }
 [e :U 2221 ]
-"65
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 65:         }
+"67
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 67:         }
 }
 [e ++ _j -> 1 `i ]
 [e :U 2219 ]
 [e $ <= _j _i 2216  ]
 [e :U 2217 ]
 }
-"66
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 66:         myLEDReset();
-[e ( _myLEDReset ..  ]
-"67
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 67:         _delay((unsigned long)((100)*(64000000/4000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
 "68
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 68:     }
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 68:         myLEDReset();
+[e ( _myLEDReset ..  ]
+"69
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 69:         _delay((unsigned long)((100)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"70
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 70:     }
 }
 [e ++ _i -> 1 `i ]
 [e :U 2215 ]
-[e $ < -> _i `ui -> _led_count `ui 2212  ]
+[e $ <= -> _i `ui -> _led_count `ui 2212  ]
 [e :U 2213 ]
 }
-"69
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 69: }
+"71
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 71: }
 [e :UE 2211 ]
 }
-"72
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 72: void my_app(void)
+"75
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 75: void my_app(void)
 [v _my_app `(v ~T0 @X0 1 ef ]
-"73
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 73: {
+"76
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 76: {
 {
 [e :U _my_app ]
 [f ]
-"75
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 75:     int i = 0, j = 0;
+"78
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 78:     int i = 0, j = 0;
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
 [v _j `i ~T0 @X0 1 a ]
 [e = _j -> 0 `i ]
-"77
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 77:     myLEDClear(1024);
-[e ( _myLEDClear (1 -> -> 1024 `i `us ]
 "80
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 80:     printf("LED Boot\r\n");
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 80:     myLEDClear((20 + 1));
+[e ( _myLEDClear (1 -> + -> 20 `i -> 1 `i `us ]
+"83
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 83:     printf("LED Boot\r\n");
 [e ( _printf :s 1C ]
-"81
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 81:     for(i = 0; i < 10; i++)
+"84
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 84:     for(i = 0; i < (20 + 1); i++)
 {
 [e = _i -> 0 `i ]
-[e $ < _i -> 10 `i 2223  ]
+[e $ < _i + -> 20 `i -> 1 `i 2223  ]
 [e $U 2224  ]
 [e :U 2223 ]
-"82
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 82:     {
+"85
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 85:     {
 {
-"83
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 83:         myLEDArray(255,0,0);
-[e ( _myLEDArray (3 , , -> -> 255 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
-"84
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 84:     }
+"86
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 86:         myLEDArray(0,255,0);
+[e ( _myLEDArray (3 , , -> -> 0 `i `uc -> -> 255 `i `uc -> -> 0 `i `uc ]
+"87
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 87:     }
 }
 [e ++ _i -> 1 `i ]
-[e $ < _i -> 10 `i 2223  ]
+[e $ < _i + -> 20 `i -> 1 `i 2223  ]
 [e :U 2224 ]
 }
-"85
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 85:     _delay((unsigned long)((2000)*(64000000/4000.0)));
-[e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
-"87
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 87:     myLEDClear(1024);
-[e ( _myLEDClear (1 -> -> 1024 `i `us ]
-"89
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 89:     while(1) {
+"90
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 90:     _delay((unsigned long)((1000)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"92
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 92:     while(1) {
 [e :U 2227 ]
 {
-"90
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 90:         myLEDSnake(20);
-[e ( _myLEDSnake (1 -> -> 20 `i `us ]
-"92
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 92:         myLEDClear(256);
-[e ( _myLEDClear (1 -> -> 256 `i `us ]
-"95
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 95:         for (i = 20; i > 0; i--)
-{
-[e = _i -> 20 `i ]
-[e $ > _i -> 0 `i 2229  ]
-[e $U 2230  ]
-[e :U 2229 ]
-"96
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 96:         {
-{
+"94
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 94:         myLEDSnake((20 + 1));
+[e ( _myLEDSnake (1 -> + -> 20 `i -> 1 `i `us ]
 "97
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 97:             for(j = 0; j <= i; j++)
-{
-[e = _j -> 0 `i ]
-[e $U 2235  ]
-[e :U 2232 ]
-"98
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 98:             {
-{
-"99
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 99:                 if(j == i)
-[e $ ! == _j _i 2236  ]
-"100
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 100:                 {
-{
-"101
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 101:                     myLEDArray(0,0,255);
-[e ( _myLEDArray (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 255 `i `uc ]
-"102
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 102:                 }
-}
-[e $U 2237  ]
-"103
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 103:                 else
-[e :U 2236 ]
-"104
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 104:                 {
-{
-"105
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 105:                     myLEDArray(0,0,0);
-[e ( _myLEDArray (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
-"106
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 106:                 }
-}
-[e :U 2237 ]
-"107
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 107:             }
-}
-[e ++ _j -> 1 `i ]
-[e :U 2235 ]
-[e $ <= _j _i 2232  ]
-[e :U 2233 ]
-}
-"108
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 108:             myLEDReset();
-[e ( _myLEDReset ..  ]
-"109
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 109:             _delay((unsigned long)((100)*(64000000/4000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
-"110
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 110:         }
-}
-[e -- _i -> 1 `i ]
-[e $ > _i -> 0 `i 2229  ]
-[e :U 2230 ]
-}
-"112
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 112:         myLEDClear(256);
-[e ( _myLEDClear (1 -> -> 256 `i `us ]
-"113
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 113:         printf("loop\r\n");
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 97:         printf("loop\r\n");
 [e ( _printf :s 2C ]
-"114
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 114:     }
+"98
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 98:     }
 }
 [e :U 2226 ]
 [e $U 2227  ]
 [e :U 2228 ]
-"115
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 115:     return;
+"99
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 99:     return;
 [e $UE 2222  ]
-"116
-[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 116: }
+"100
+[; ;D:/Desktop/WS2813B - PIC18F45K50/PIC18F46K42_WS2813B_DRIVER.X/app.c: 100: }
 [e :UE 2222 ]
 }
 [p f _printf 8388608 ]

@@ -27022,7 +27022,6 @@ uint8_t SPI1_ReadByte(void);
 
 
 
-
 void myLEDArray(uint8_t r, uint8_t g, uint8_t b)
 {
     SPI1TXB = g;
@@ -27049,11 +27048,14 @@ void myLEDClear(uint16_t led_count)
     myLEDReset();
 }
 
+
+
+
 void myLEDSnake(uint16_t led_count)
 {
     int i = 0, j = 0;
 
-    for (i = 0; i < led_count; i++)
+    for (i = 0; i <= led_count; i++)
     {
         for(j = 0; j <= i; j++)
         {
@@ -27072,47 +27074,29 @@ void myLEDSnake(uint16_t led_count)
 }
 
 
+
 void my_app(void)
 {
 
     int i = 0, j = 0;
 
-    myLEDClear(1024);
+    myLEDClear((20 + 1));
 
 
     printf("LED Boot\r\n");
-    for(i = 0; i < 10; i++)
+    for(i = 0; i < (20 + 1); i++)
     {
-        myLEDArray(255,0,0);
+        myLEDArray(0,255,0);
     }
-    _delay((unsigned long)((2000)*(64000000/4000.0)));
 
-    myLEDClear(1024);
+
+    _delay((unsigned long)((1000)*(64000000/4000.0)));
 
     while(1) {
-        myLEDSnake(20);
 
-        myLEDClear(256);
+        myLEDSnake((20 + 1));
 
 
-        for (i = 20; i > 0; i--)
-        {
-            for(j = 0; j <= i; j++)
-            {
-                if(j == i)
-                {
-                    myLEDArray(0,0,255);
-                }
-                else
-                {
-                    myLEDArray(0,0,0);
-                }
-            }
-            myLEDReset();
-            _delay((unsigned long)((100)*(64000000/4000.0)));
-        }
-
-        myLEDClear(256);
         printf("loop\r\n");
     }
     return;
