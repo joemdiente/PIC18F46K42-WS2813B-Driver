@@ -57,7 +57,7 @@ typedef struct {
     uint32_t blu_led_str;
 } WS2813B_Data;
 
-void myLEDArray(uint8_t r, uint8_t g, uint8_t b);
+void WS2813_Transmit_Data(uint8_t r, uint8_t g, uint8_t b);
 
 #ifdef	__cplusplus
 extern "C" {
