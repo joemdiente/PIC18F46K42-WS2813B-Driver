@@ -1,0 +1,17 @@
+.generated_files/*
+build/*
+dist/*
+nbproject/Makefile-*
+nbproject/Package-*
+nbproject/private/*
+private/*
+*.i
+*.lst
+*.rlf
+*.o
+*.sdb
+*.p1
+*.d
+*.i
+*.i
+*.i
